@@ -1,0 +1,26 @@
+<!-- use ! to quick-create an ejs template -->
+
+<!-- include header -->
+<%-include('include/_header')%>
+
+<!-- Main -->
+<main id="main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+            <div class="filter">
+                <a href="/"class="border-shadow btn">
+                    <i class="material-icons">fast_rewind</i>
+                    <span class="text-gradient">All Player</span>
+                </a>
+            </div>
+        </div>
+        <!-- /form handling -->
+        <%-include('include/_add')%>
+        <!-- /form handling -->
+    </div>
+</main>
+
+<!-- /Main -->
+
+<!-- include footer -->
+<%-include('include/_footer')%>

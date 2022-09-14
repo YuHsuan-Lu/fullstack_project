@@ -1,0 +1,39 @@
+<!-- use ! to quick-create an ejs template -->
+
+<!-- include header -->
+<%-include('include/_header')%>
+
+<!-- Main -->
+<main id="main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+            <a href="/add-user"class="border-shadow btn">
+                <i class="material-icons">face</i>
+                <span class="text-gradient">New Player</span>
+            </a>
+        </div>
+        <!-- form handling -->
+            <form action="/" method="POST">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>Username</th>
+                            <th>UID</th>
+                            <th>Email</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%-include('include/_show')%> 
+                    </tbody>
+                </table>
+            </form>
+        <!-- /form handling -->
+    </div>
+</main>
+
+<!-- /Main -->
+
+<!-- include footer -->
+<%-include('include/_footer')%>

@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Karla:wght@700&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    /* max-width: em; */
+    margin: 0 2em 0 2em;
+}
+.nav-brand{
+    font-family: 'Helvetica Neue' sans-serif;
+    font-weight: bold;
+    letter-spacing: .06em;
+    color: black;
+    font-size:2.5em
+}
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.text-center{
+    text-align: center;
+}
+.border-shadow{
+    border: .1em solid #330867;
+    box-shadow: .1em 1.5em 4em white;
+}
+.inline{
+    display: inline-block;
+}
+.text-light{
+    color: rgb(126, 25, 25);
+}
+/* background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); */
+.text-dark{
+    color: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+/* .text-gradient{
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+#header nav{
+    /* background-color: #06d6a0; */
+    background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    padding: 1em 0;
+    width: 100%;
+}
+#main{
+    margin-top: 6em;
+    font-family: "JetBrains Mono",monospace;
+}
+
+#main .container .box-nav>a{
+    font-size: 1em;
+    padding: .5em 1em;
+    border-radius: .3em;
+}
+
+#main .container form{
+    margin: 2em 0;
+}
+
+table{
+    border-spacing: 0;
+    width: 100%;
+}
+.table td,.table th{
+    padding: .75em;
+    /* vertical-align: top; */
+    text-align: center;
+    border-top: .1em solid #bac8e0;
+}
+.table td>a.btn{
+    padding: 1em 1em;
+    font-size: 1em;
+    margin: .2em;
+}
+.table tr:hover{
+    background-color: #2af598;
+}
+.table .thead-dark th{
+    color: white;
+    background-color: black;
+}
+
+/* button */
+.btn {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: .25em;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 .125em .25em,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 1em;
+  padding-right: 1em;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 1.1em;
+}
+
+.btn:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 .125em .25em, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.btn:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 .25em .5em, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-.125em);
+}
+
+.btn:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(.125em);
+}
+
+
+.filter{
+    margin-left: 0;
+}
+
+:root{
+    --bright: rgba(255,255,255,0.3);
+}
+
+body {
+  background: linear-gradient(45deg, #FC466B, #3F5EFB);
+  height: 100vh;
+  font-family: "JetBrains Mono",monospace;
+}
+
+.new-user {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+}
+
+
+form {
+  background: var(--bright);
+  padding: .2em;
+  height: 20em;
+  border-radius: 1.2em;
+  border-left: .1em solid var(--bright);
+  border-top: .1em solid var(--bright);
+  backdrop-filter: blur(.6em);
+  box-shadow: 1.2em 1.2em 2.4em -.25em rgba(0,0,0,0.2);
+  text-align: center;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around; */
+}
+  
+form p {
+    font-weight: 500;
+    color: #fff;
+    opacity: 0.7;
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 1em;
+    text-shadow: .125em .125em .25em rgba(0,0,0,0.2);
+}
+form small{
+    margin-top: 0em;
+}
+  
+form a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: .7em;
+}
+
+form a:hover {
+    text-shadow: .125em .125em .5em #00000040;
+}
+
+form a:active {
+    text-shadow: none;
+}
+
+form input {
+    background: transparent;
+    width: 200px;
+    padding: 1em;
+    margin-bottom: 2em;
+    border: none;
+    border-left: .06em solid var(--bright);
+    border-top: .06em solid var(--bright);
+    border-radius: 312em;
+    backdrop-filter: blur(.5em);
+    box-shadow: .25em .25em 3.8em rgba(0,0,0,0.2);
+    color: #fff;
+    font-family: "JetBrains Mono",monospace;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    text-shadow: .125em .125em .25em rgba(0,0,0,0.2);
+    margin-top: 1em;
+}
+
+form input:hover {
+    background: rgba(255,255,255,0.1);
+    box-shadow: .25em .25em 3.8em .5em rgba(0,0,0,0.2);
+}
+
+form input [type="email"]:focus,
+form input[type="password"]:focus {
+    background: rgba(255,255,255,0.1);
+    box-shadow: .25em .25em 3.8em .5em rgba(0,0,0,0.2);
+}
+
+form input[type="button"] {
+    margin-top: .6em;
+    width: 10em;
+    font-size: 1rem;
+}
+
+form input[type="button"]:hover {
+    cursor: pointer;
+}
+
+form input[type="button"]:active {
+    background: rgba(255,255,255,0.2);
+}
+
+form input:hover {
+    margin: .25em;
+}
+
+::placeholder {
+font-family: "JetBrains Mono",monospace;
+font-weight: 400;
+color: #fff;
+text-shadow: .125em .125em .25em rgba(0,0,0,0.4);
+}
+
+.drops .drop {
+background: var(--bright);
+backdrop-filter: blur(.6em);
+border-radius: .6em;
+border-left: .1em solid var(--bright);
+border-top: 1em solid var(--bright);
+box-shadow: .6em .6em 3.8em -.5em rgba(0,0,0,0.2);
+position: absolute;
+transition: all 0.2s ease;}
+
+.drops .drop-1 {
+    height: 5em;
+    width: 5em;
+    top: -1.25em;
+    left: -2.5em;
+    z-index: -1;
+}
+
+.drops .drop-2 {
+    height: 5em;
+    width: 5em;
+    bottom: -1.9em;
+    right: -.6em;
+}
+
+.drops .drop-3 {
+    height: 6.25em;
+    width: 6.25em;
+    bottom: 7.5em;
+    right: -3.2em;
+    z-index: -1;
+}
+
+.drops .drop-4 {
+    height: 7.5em;
+    width: 7.5em;
+    top: -3.8em;
+    right: -3.8em;
+}
+
+.drops .drop-5 {
+    height: 3.8em;
+    width: 3.8em;
+    bottom: 10.2em;
+    left: 9em;
+    z-index: -1;
+}
+
+a,
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+

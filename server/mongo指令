@@ -1,0 +1,20 @@
+alias "mongo" <bin path> //in root file
+
+mongo --version
+
+mongo //run
+
+show db//show the list of dbs
+show collections//show the list of documents 
+db.stats()
+use students
+    //new db name
+
+db  .user           .insert({"key":"value"})
+   //document name //method
+
+db.user.find() // print all the data from user document
+db.user.find().pretty
+db.user.count()
+db.user.update({"key":"value"},{$set:{"key":"value"}})
+db.user.remove({"key":"value"})  
